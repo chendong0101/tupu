@@ -1,0 +1,304 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "tupu_sql_server"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"install",
+			"link_directories",
+			"target_link_libraries",
+			"include_directories",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 56,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 60,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 40,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 58,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 37,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 57,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk"
+				},
+				{
+					"fragment" : "-std=gnu++11"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 5,
+					"path" : "/usr/local/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/Applications/include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/Users/chendong/work/cd_tupu/grpc_test"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/chendong/work/cd_tupu/grpc_test/src"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/chendong/work/cd_tupu/grpc_test/thirdparty/json/nlohmann"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/chendong/work/cd_tupu/grpc_test/build/src/message/.."
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/chendong/work/cd_tupu/grpc_test/thirdparty/cppjieba/include"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "/usr/local/opt/openssl/include"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 4,
+			"id" : "message::@ee3c1a567aafaf3206ac"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "log::@c50f4de1a1e2d0ee20d5"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "utils::@f1b38b22aeb65474a6c5"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "clientproxy::@c2fa69c67548b9583d0b"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "service::@38da4c5e8ec58f69ad66"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "http::@8197c89eb9db1dcb42c8"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "grpc::@bbe74945a9b3b8f9fc3e"
+		}
+	],
+	"id" : "tupu_sql_server::@6890427a1f51a3e7e1df",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 2,
+				"path" : "bin"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "/usr/local"
+		}
+	},
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-g",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-L/Applications/lib",
+				"role" : "libraryPath"
+			},
+			{
+				"fragment" : "-Wl,-rpath,/Applications/lib -Wl,-rpath,/usr/local/lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "src/grpc/libgrpc.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "src/http/libhttp.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "src/service/libservice.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "src/clientproxy/libclientproxy.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "src/utils/libutils.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "src/log/liblog.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "src/message/libmessage.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/usr/local/lib/libopencc.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/usr/local/lib/libgrpc.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/usr/local/lib/libgrpc++.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/usr/local/lib/libgflags.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/usr/local/lib/libACE.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/usr/lib/libssl.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/usr/lib/libcrypto.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/lib/libiconv.tbd",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/usr/local/lib/libprotobuf.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "-lworkflow",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "tupu_sql_server",
+	"nameOnDisk" : "tupu_sql_server",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/main.cc",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}
